@@ -25,6 +25,10 @@ time, mark, audio, video {
    color: black;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 body{
     background-color: lightgray;
     margin: auto;
