@@ -1,0 +1,396 @@
+/* CSS reset code */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset,form,label,legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 1rem; 
+   font: inherit;
+   vertical-align: baseline;
+
+   /*standaard instellingen*/
+   font-size: 1rem;
+   font-family:Arial, Helvetica, sans-serif;
+   color: black;
+}
+
+body{
+    background-color: lightgray;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    
+}
+
+/* banner */    
+#banner {
+    background-image: url("images/Environment-Banner.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: auto
+    
+}
+
+#banner h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+#banner p {
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3b3f;
+}
+
+.title{
+    margin-bottom: 40px;
+}
+
+
+/* navigatie balk */
+nav {
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(69, 67, 67); /* Doorzichtige grijze achtergrond */   
+    height: 70px;
+}   
+
+.menu {
+    display: flex;
+    list-style: none; 
+    gap: 70px;
+    flex-grow: 1; /* Laat het menu de beschikbare ruimte gebruiken */
+    justify-content: center; 
+    border: 2px 0px solid;
+}   
+
+
+
+li {
+    display: flex; 
+    align-items: center;
+}
+
+
+
+.menu a {
+    text-decoration: none;
+    background-color: rgba(151, 149, 149, 0.6) ;
+    text-align: center;
+    width: 120px ;
+    padding: 12px;
+    display: block;
+    font-size: larger;
+    transition: all 0.3s ease; 
+}
+
+.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Hover-effect */
+    color: #21ab3a;
+    text-shadow: 0px 0px 3px rgba(126, 124, 124, 0.5);
+}
+
+.logo {
+    height: 70px; /*Hoogte van het logo */
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Zorgt voor een vloeiende beweging */ 
+}
+
+
+#sectie1 img,
+#sectie2 img,
+#sectie3 img{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px
+}
+
+/*sectie 1*/
+#sectie1{
+    background-color: whitesmoke;
+}
+
+.about-container{
+    padding: 40px 70px;
+}
+
+#sectie1 h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgb(50, 96, 222);
+}
+
+.text-block, h2{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #1c5007;
+    width: 100%px;
+}
+
+.content {
+   display: flex;
+   align-items: flex-start; /* Zorg dat tekst en afbeelding bovenaan lijnen */
+   margin-top: 10px;
+}
+
+.content p{
+font-size: 1rem;
+}
+
+#text-block {
+    flex: 3; /* Tekstblok neemt meer ruimte in */
+    font-weight: 100;
+}
+
+.team-photo{
+    flex: 1; /* Afbeelding neemt minder ruimte in */
+    height: 300px;
+    object-fit: cover;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.back-to-top{
+    color: black;   
+    background-color: rgb(148, 207, 245);
+    padding: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    max-width: fit-content; /* border rond tekst*/
+    font-size: small;
+}
+
+/* Sectie 2 */
+#sectie2 {
+    margin-top: 50px;
+    background-color: rgb(125, 154, 125);
+    border-radius: 5px;
+    width: 100%;
+    display: flex; 
+    align-items: stretch; 
+}
+
+.climate-container {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 60px;
+}
+
+.climate-container h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: rgb(50, 96, 222);
+}
+
+.climate-photo {
+    flex: 1; 
+    max-width: 45%; 
+    height: 400px;
+    object-fit: cover;
+    margin-right: 20px; 
+    align-self: stretch;
+}
+
+/*sectie 3*/
+#sectie3{
+    margin-top: 50px;
+    padding: 50px;
+    background-color: whitesmoke;
+}
+
+#sectie3 h1{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: rgb(50, 96, 222);
+}
+#voorbeelden{
+    align-items: stretch;
+    display: flex;
+}
+
+.voorbeeld{
+    padding: 0 10px;
+    flex: 1;
+}
+
+.IoT-tekst{
+    height: 180px;
+}
+
+
+#voorbeelden img{
+    height: 200px; 
+    object-fit: cover; 
+    display: block; 
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+
+/*contact info */
+#sectie4 {
+    background: url('./images/climate-environment-banner-image.jpg') no-repeat center center;
+    background-color: #767373;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    color: #333;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    text-shadow: rgba(0, 0, 0, 0.455) 2px 2px 9px;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: #515050;
+    padding: 30px;
+    
+}
+
+.contact-info h2 {
+    color: green;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.contact-info p, a {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+  
+}
+
+.contact-info img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 10px 60px;
+    background-color: #ccc;
+    color: white;
+    border-left: 3px solid black;
+    height: 420px;
+}
+
+.contact-form h2 {
+    color: green;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #555;
+    padding: 5px;
+    border-radius: 4px; 
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 4px;     
+    background-color:  rgb(166, 162, 162);
+    color: white;
+}
+
+.input-group img {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+}
+
+.contact-form textarea {
+    padding-bottom: 50px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+.contact-form button:hover {
+    background-color: #a6d391;
+}
+
+#link-contact{
+    text-decoration: none;
+}
+
+/*footer*/
+
+#footer{
+    background-color: black;
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+
+#footer p{
+    color: rgb(145, 142, 142);
+    text-align: center;
+    margin: auto;
+}
+
+#footer, img{
+   height: 30px;
+   padding-right: 10px;
+}
